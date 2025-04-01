@@ -1,18 +1,48 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <link rel="icon" href="/img/id-card.png">
-        <title>About Page</title>
-            <link rel="stylesheet" href="/css/styles.css">
-        <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;700&display=swap" rel="stylesheet">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/img/id-card.png">
+    <title>About Page</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="main-content">
+        {{>header}} <!-- Includes the header partial correctly -->
 
-    </head>
-        <body>
-            <div class="main-content">
-            {{>header}}
-            <img src="/img/IMG_20201003_185133_673.jpg">
-            </div>
-            {{>footer}}
+        <h1>About Us</h1>
 
-        </bdoy>
-    </html> 
+        <section>
+            <h2>🌍 Our Mission</h2>
+            <p>At <strong>Serene-Skies</strong>, our mission is to provide accurate and reliable weather updates, helping you make informed decisions about your day. We want to ensure that whether you're planning your commute, outdoor activities, or travel, you have the most up-to-date information available at your fingertips.</p>
+        </section>
+
+        <section>
+            <h2>🌟 Why Choose Us?</h2>
+            <ul>
+                <li>✅ Real-time weather updates for any location worldwide.</li>
+                <li>✅ Detailed reports with temperature and forecasts.</li>
+                <li>✅ Accurate data sourced from trusted weather services.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>💡 Our Vision</h2>
+            <p>We aim to be the go-to weather source for individuals and businesses alike. By leveraging cutting-edge technology and reliable data, we strive to provide an intuitive platform that makes weather information accessible and understandable for everyone.</p>
+        </section>
+
+        <section>
+            <h2>📞 Contact Us</h2>
+            <p>If you have any questions, suggestions, or need support, feel free to <a href="mailto:support@yourwebsite.com">contact us</a>!</p>
+        </section>
+
+        <img src="/img/1143397-1500x2000-mobile-hd-robot-wallpaper-photo.jpg" alt="About Us Image" style="width:100%; height:auto; margin-top:20px;">
+
+    </div>
+
+    {{>footer}} <!-- Includes the footer partial correctly -->
+
+</body>
+</html>

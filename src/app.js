@@ -26,7 +26,7 @@ app.use(express.static(pub_dir));
 // Routes
 app.get('', (req, res) => {
     res.render('index', {
-        title: 'Weather-App',
+        title: 'Serene-Skies',
         name: 'Nikhil Manne'
     });
 });

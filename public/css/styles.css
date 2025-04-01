@@ -1,4 +1,4 @@
-body {
+/* body {
     color: #333333;
     font-family: Arial, sans-serif;
     max-width: 650px;
@@ -39,5 +39,55 @@ header a {
 img{
 width: 400px;
 margin-top: 20px ;
+}
+ */
+
+ @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
+
+body {
+    color: #BDC696; /* Light greenish tone for text */
+    font-family: 'Playfair Display', serif;
+    max-width: 650px;
+    margin: 0 auto;
+    padding: 0 16px;
+    background-color: #4e5337; /* Dark grayish background */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.main-content {
+    flex-grow: 1;
+}
+
+footer {
+    color: #030303; /* Soft brownish tone */
+    border-top: 1px solid #666A4E; /* Olive-green for subtle contrast */
+    margin-top: 16px;
+    padding: 16px 0;
+}
+
+header {
+    margin-top: 16px;
+    margin-bottom: 48px;
+}
+
+h1 {
+    font-size: 64px;
+    margin-bottom: 16px;
+    color: #28859c; /* Deep purple for headings */
+}
+
+header a {
+    color: #422526; /* Matching footer color */
+    margin-right: 16px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+img {
+    width: 400px;
+    margin-top: 20px;
+    border-radius: 8px; /* Adds a soft touch */
 }
 

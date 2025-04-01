@@ -1,18 +1,45 @@
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Help Page</title>
-        <link rel="icon" href="\img\help.png">
+    <link rel="icon" href="/img/help.png">
     <link rel="stylesheet" href="/css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;700&display=swap" rel="stylesheet">
-
 </head>
 <body>
+
     <div class="main-content">
-    {{>header}}  <!-- Includes the header partial correctly -->
-    <p>{{message}}</p>
+        {{>header}}  <!-- Includes the header partial correctly -->
+
+        <h2>📌 How to Read the Weather Report?</h2>
+
+        <p><strong>Condition:</strong> This describes the current weather (e.g., Clear, Cloudy, Rainy).</p>
+        <p><strong>Temperature:</strong> The report gives the current temperature in Fahrenheit or Celsius (e.g., It is currently 73°F out).</p>
+        <p><strong>Chance of Rain:</strong> This shows the likelihood of rain (e.g., There is a 0% chance of rain means no rain expected).</p>
+
+        <h2>🌍 Example Weather Report & What It Means</h2>
+        <p>👉 <strong>"Clear. It is currently 73°F out. There is a 0% chance of rain."</strong></p>
+        <ul>
+            <li>✔ The sky is clear, with no clouds or rain.</li>
+            <li>✔ The temperature is warm and comfortable.</li>
+            <li>✔ No rain expected, so it’s a great time for outdoor activities!</li>
+        </ul>
+
+        <h2>❓ Frequently Asked Questions</h2>
+        <p><strong>🔹 What does “partly cloudy” mean?</strong><br>
+        It means the sky has some clouds, but there’s still plenty of sunlight.</p>
+
+        <p><strong>🔹 What if the chance of rain is 50%?</strong><br>
+        This means there’s an equal chance of rain and dry weather—carry an umbrella just in case!</p>
+
+        <p><strong>🔹 How often is the weather updated?</strong><br>
+        Our data refreshes regularly to provide the latest weather conditions.</p>
     </div>
-    {{>footer}}
+
+    {{>footer}} <!-- Includes the footer partial correctly -->
 
 </body>
 </html>
