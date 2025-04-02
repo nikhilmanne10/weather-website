@@ -6,6 +6,7 @@ const geocode=require('./utils/geocode')
 const forecast=require('./utils/forecast')
 
 const app = express();
+const port=process.env.PORT || 7000
 
 // Define paths (Ensure templates is OUTSIDE src)
 const pub_dir = path.join(__dirname, '../public');  
@@ -58,8 +59,6 @@ app.get('/weather',(req,res)=>{
     
 })
 
-
-
 app.get('/about', (req, res) => {
     res.render('about', {
         title: 'About Me',
@@ -85,6 +84,6 @@ app.get('*', (req, res) => {
 });
 
 // Start server
-app.listen(7000, () => {
-    console.log("Server is running on port 7000");
+app.listen(port, () => {
+    console.log(`Server is running on port 7000 ${port}`);
 });
